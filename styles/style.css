@@ -6,7 +6,25 @@
 
 body {
     font-family: sans-serif;
+    /* overflow-x: hidden; */
 }
+/*scroll bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#292824;
+    border-radius: 10px;
+  }
 
 /*header*/
 header {}
@@ -49,9 +67,13 @@ nav {
     font-weight: bold;
 }
 
-.main-menu ul li a:hover {}
+.main-menu ul li a:hover {
+    color: rgb(180, 180, 162);
+}
 
-.main-menu ul li a.active {}
+.main-menu ul li a.active {
+    color:#f8e008;
+}
 
 .main-menu.active {
     background-color: red;
@@ -132,6 +154,51 @@ nav {
     font-size: 1.25rem;
 }
 
+/*upcoming events*/
+.upcoming-events{
+    background: url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.upcoming-events h2{
+    text-align: center;
+    display: block;
+    padding: 2em 0 .5em 0;
+}
+.upcoming-events hr{
+    width: 100px;
+    height: 5px;
+    background-color: #f8e008;
+    border:none;
+    margin: 0 auto;
+}
+.upcoming-events .events{
+    display: flex;
+    padding: 2em 5em;
+    gap: 1em;
+    /* flex-wrap: wrap; */
+}
+.upcoming-events .events .event{
+    border-radius: 5px;
+    min-width: 300px;
+    background: #fff;
+    text-align:center;
+}
+.upcoming-events .events .event .event-img {
+    max-width: 400px;
+}
+.upcoming-events .events .event .event-img img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.upcoming-events .events .event .event-title, .upcoming-events .events .event .event-description{
+    margin-top: 1em;
+}
+.upcoming-events .events .event .event-description{
+    padding: 0 2em 2em 2em;
+    color:#353535;
+}
 /*footer*/
 
 /*mobile screen*/
@@ -156,12 +223,18 @@ nav {
     .hero-text {
         padding: 0;
         width: 75%;
-        margin: 10em 2em;
+        margin: 7em 2em;
     }
 
     .hero-heading {
         margin: 1.75em 0;
         font-size: 1.5rem;
+    }
+    /*upcoming events*/
+    .upcoming-events .events{
+       
+        padding:2em;
+        gap: 1em;
     }
 }
 
