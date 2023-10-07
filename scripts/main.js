@@ -6,5 +6,3 @@ hamBtn.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     hamBtn.classList.toggle('active');
 })
-
-alert('hey')

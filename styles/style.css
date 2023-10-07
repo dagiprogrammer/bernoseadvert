@@ -90,16 +90,31 @@ nav{
     left: 0;
     bottom:0;
     right: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     z-index: 1;
     min-height: 100vh;  
 }
 .hero-text{
     margin: 100px 10px;
     color: #fff;
-    background-color: rgb(39, 37, 37);
+  
     width: 50%;
-   
+   padding: 5em;
+}
+.hero-date-location h5{
+    margin: .35em 0;
+}
+.hero-date-location i{
+    color:#f8e008;
+    font-size: 1rem;
+    margin: 0 .5em;
+}
+.hero-heading{
+    margin: 1.75em 0;
+    font-size: 1.75rem;
+}
+.hero-description{
+
 }
 
 /*footer*/
@@ -119,6 +134,13 @@ nav{
         border-radius: .25em;
         background: transparent;
         color: #fff;
+    }
+    .hero-text{
+       padding: 0;
+    }
+    .hero-heading{
+        margin: 1.75em 0;
+        font-size: 1.5rem;
     }
 }
 
