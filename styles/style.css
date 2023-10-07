@@ -24,7 +24,7 @@ nav{
 }
 /*logo*/
 .logo{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 .logo img{
   
@@ -44,6 +44,8 @@ nav{
 .main-menu ul li a{
     color:#fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .main-menu ul li a:hover{
 
@@ -51,12 +53,30 @@ nav{
 .main-menu ul li a.active{
 
 }
-.ticket-btn{
-    background: #fff;
+.main-menu.active{
+    background-color: red;
+    display: block;
+}
+.right-menu{
+  
+}
+.ham-btn{
+    display: none;
+    
+}
+.nav-btn{
+    background: #ffffff;
     color: #000;
     text-decoration: none;
     padding: .5em;
     border-radius: 5px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.login-btn{
+    background: #f8e008;
+    color: #141414;
+    margin: .5em;
 }
 /*main*/
 .hero{
@@ -84,8 +104,35 @@ nav{
 
 /*footer*/
 
+/*mobile screen*/
 @media(max-width: 700px){
-    .hero-text{
-        width: 100%;
+    nav{
+        flex-wrap: wrap;
+    }
+    .main-menu{
+        display: none;
+    }
+    .ham-btn{
+        display:inline-block;
+        cursor: pointer;
+        padding: .5em;
+        border-radius: .25em;
+        background: transparent;
+        color: #fff;
+    }
+}
+
+/*tablet screen*/
+@media(max-width: 1100px){
+    .main-menu{
+        display: none;
+    }
+    .ham-btn{
+        display:inline-block;
+        cursor: pointer;
+        padding: .5em;
+        border-radius: .25em;
+        background: transparent;
+        color: #fff;
     }
 }
