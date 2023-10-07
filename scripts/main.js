@@ -6,3 +6,5 @@ hamBtn.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     hamBtn.classList.toggle('active');
 })
+
+//navigation menus dropdown
