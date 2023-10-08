@@ -161,12 +161,12 @@ nav {
     background-attachment: fixed;
     min-height: 100vh;
 }
-.upcoming-events h2{
+.upcoming-events h2, .projects h2, .clients h2{
     text-align: center;
     display: block;
     padding: 2em 0 .5em 0;
 }
-.upcoming-events hr{
+.upcoming-events hr, .projects hr, .clients hr{
     width: 100px;
     height: 5px;
     background-color: #f8e008;
@@ -198,6 +198,61 @@ nav {
 .upcoming-events .events .event .event-description{
     padding: 0 2em 2em 2em;
     color:#353535;
+}
+/*transition*/
+.transition{
+    background: url('https://ovatheme.com/em4u/wp-content/uploads/2017/10/7-1-640x384.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;                                      
+}
+/*projects*/
+.projects{
+    min-height: 100vh;
+    background: url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.projects .project-grid{
+     display: flex;
+    padding: 2em 5em;
+    gap: 1em;
+}
+.projects .project-grid .project{   
+    border-radius: 5px;
+    min-width: 300px;
+    background: #fff;
+    text-align:center;
+}
+.projects .project-grid .project .project-img{
+    width: 300px;
+}
+.projects .project-grid .project .project-img img{
+    width: 100%;
+}
+.projects .project-grid .project .project-title, .projects .project-grid .project .project-description{
+    margin-top: 1em;
+}
+.projects .project-grid .project .project-description{
+    padding: 0 2em 2em 2em;
+    color:#353535;
+}
+/*about*/
+
+/*clients*/
+.clients .clients-slider .client{
+    width: 150px;
+    height: 150px;
+}
+.clients .clients-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.clients .clients-slider .client img{
+    width: 100%;
+    border-radius: 50%;
 }
 /*footer*/
 
@@ -232,10 +287,12 @@ nav {
     }
     /*upcoming events*/
     .upcoming-events .events{
-       
         padding:2em;
-        gap: 1em;
     }
+    /*projects*/
+    .projects .project-grid{
+       padding: 2em;
+   }
 }
 
 /*tablet screen*/
